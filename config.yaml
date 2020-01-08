@@ -1,0 +1,13 @@
+baseURL: "https://www.adigheorghe.ro"
+languageCode: "en-us"
+title: "Adrian Gheorghe"
+pygmentsstyle: 'monokai'
+paginate: 6
+social:
+  facebook: "https://www.facebook.com/adrian.gheorghe.7"
+  linkedin: "https://www.linkedin.com/in/adrian-gheorghe-01836344/"
+  twitter: "https://twitter.com/adi_ghe"
+  medium: "https://medium.com/@adrian.gheorghe.dev"
+  github: "https://github.com/adrian-gheorghe"
+taxonomies:
+  author: authors

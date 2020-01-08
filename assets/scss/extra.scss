@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+.page-resume{
+  h3{
+    font-size: 20px;
+  }
+  h4{
+    font-size: 14px;
+    font-weight: normal;
+    color: #a8a8a8;
+    margin-bottom: 20px;
+  }
+  p{
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  ul{
+    padding-top: 0;
+
+    li {
+      font-size: 16px;
+    }
+  }
+
+  hr{
+    margin: 25px auto;
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+a.resume{
+  margin-left: 30px;
+  display: block;
+
+  path, polygon{
+    -webkit-transition: all 0.45s ease;
+    -o-transition: all 0.45s ease;
+    transition: all 0.45s ease;
+  }
+
+  &:hover{
+    path, polygon{
+      fill: var(--primary) !important;
+    }
+  }
+}
+
+

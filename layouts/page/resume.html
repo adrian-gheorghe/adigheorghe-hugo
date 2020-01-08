@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+<section class="section narrow">
+    <section>
+        {{ range site.Taxonomies.authors }}
+            {{ with .Page }}
+                <section class="section narrow">
+                    <div class="author-hero">
+                        {{ with .Params.avatar }}
+                        <div class="author-hero-image">
+                            <img src="{{ . }}" />
+                        </div>
+                        {{ end }}
+                        <h1 class="author-heading">{{ .Title }}</h1>
+                        <p class="author-subheading">{{ .Params.bio }}</p>
+                        <div class="author-social">
+                            {{ partial "author/social_links.html" . }}
+                        </div>
+                    </div>
+                </section>
+            {{ end }}
+        {{ end }}
+    </section>
+    <div class="authors-gradient"></div>
+    <article id="articleContent" class="page-resume">
+        {{ .Content }}
+    </article>
+
+</section>
+
+{{ end }}
